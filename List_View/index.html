@@ -1,0 +1,26 @@
+<!-- An HTML snippet demonstrating the use of Vue.js for form control and data binding. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewreport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <script src="app.js" defer></script>
+    <title>A First App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Vue Course Goals</h1>
+    </header>
+    <section id="user-goal">
+        <h2>My Course Goal</h2>
+        <p>{{ courseGoal }}</p>
+        <p v-html="outputGoal()"></p>
+        <p>Learn more <a v-bind:href="vueLink">about Vue</p>
+    </section>
+</body>
+
+</html>
